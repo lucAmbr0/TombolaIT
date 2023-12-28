@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@200;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,200" />
+
+    <title>Tombola</title>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div id="leftSideDiv">
+            <div style="display: flex; flex-direction: row;">
+                <!-- <div id="statsContainer">
+                    <h3 class="stats">Numeri estratti: </h3>
+                    <h3 class="stats">Numeri mancanti: </h3>
+                    <h3 class="stats"></h3>
+                    <h3 class="stats">Costo per casella: €0.20</h3>
+                    <h3 class="stats">Costo tabellone: €1.50</h3>
+                    <h3 class="stats"></h3>
+                    <h3 class="stats">Montepremi: €5.00</h3>
+                </div> -->
+                <!-- <div style="width: 2vw;"></div> -->
+                <div id="bigNumberDiv">
+                    <h2>Numero:</h2>
+                    <h1 id="currentNumber">--</h1>
+                </div>
+            </div>
+            <div id="recentNumbersDiv">
+                <h2>Numeri estratti</h2>
+                <div id="recentNumbersList">
+                    <p class="recentNumberText" style="background-color: rgba(0,0,0,0);"></p>
+                </div>
+            </div>
+            <div id="other">
+                <div class="square"><h2 class="bottomSections" id="numberOfUsed">Numeri estratti: 0</h2></div>
+                <div class="square"><h2 class="bottomSections" id="numberOfMissing">Numeri mancanti: 90</h2></div>
+                <div class="square"><h2 class="bottomSections" id="dateAndTime">Data e ora </h2></div>
+                <div class="square" id="smaller"><h3 class="bottomSections" id="smaller">Tombola HTML v1.0.0.0</h3></div>
+            </div>
+        </div>
+        <div id="tabellaDiv">
+            <div id="tabelloneTitleDiv">
+                <h1>Tombola!</h1>
+            </div>
+            <div class="cartellaDiv">
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_1">1</p>
+                    <p class="tabellaNumberText" id="_2">2</p>
+                    <p class="tabellaNumberText" id="_3">3</p>
+                    <p class="tabellaNumberText" id="_4">4</p>
+                    <p class="tabellaNumberText" id="_5">5</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_11">11</p>
+                    <p class="tabellaNumberText" id="_12">12</p>
+                    <p class="tabellaNumberText" id="_13">13</p>
+                    <p class="tabellaNumberText" id="_14">14</p>
+                    <p class="tabellaNumberText" id="_15">15</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_21">21</p>
+                    <p class="tabellaNumberText" id="_22">22</p>
+                    <p class="tabellaNumberText" id="_23">23</p>
+                    <p class="tabellaNumberText" id="_24">24</p>
+                    <p class="tabellaNumberText" id="_25">25</p>
+                </div>
+            </div>
+            <div class="cartellaDiv">
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_6">6</p>
+                    <p class="tabellaNumberText" id="_7">7</p>
+                    <p class="tabellaNumberText" id="_8">8</p>
+                    <p class="tabellaNumberText" id="_9">9</p>
+                    <p class="tabellaNumberText" id="_10">10</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_16">16</p>
+                    <p class="tabellaNumberText" id="_17">17</p>
+                    <p class="tabellaNumberText" id="_18">18</p>
+                    <p class="tabellaNumberText" id="_19">19</p>
+                    <p class="tabellaNumberText" id="_20">20</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_26">26</p>
+                    <p class="tabellaNumberText" id="_27">27</p>
+                    <p class="tabellaNumberText" id="_28">28</p>
+                    <p class="tabellaNumberText" id="_29">29</p>
+                    <p class="tabellaNumberText" id="_30">30</p>
+                </div>
+            </div>
+            <div class="cartellaDiv">
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_31">31</p>
+                    <p class="tabellaNumberText" id="_32">32</p>
+                    <p class="tabellaNumberText" id="_33">33</p>
+                    <p class="tabellaNumberText" id="_34">34</p>
+                    <p class="tabellaNumberText" id="_35">35</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_41">41</p>
+                    <p class="tabellaNumberText" id="_42">42</p>
+                    <p class="tabellaNumberText" id="_43">43</p>
+                    <p class="tabellaNumberText" id="_44">44</p>
+                    <p class="tabellaNumberText" id="_45">45</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_51">51</p>
+                    <p class="tabellaNumberText" id="_52">52</p>
+                    <p class="tabellaNumberText" id="_53">53</p>
+                    <p class="tabellaNumberText" id="_54">54</p>
+                    <p class="tabellaNumberText" id="_55">55</p>
+                </div>
+            </div>
+            <div class="cartellaDiv">
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_36">36</p>
+                    <p class="tabellaNumberText" id="_37">37</p>
+                    <p class="tabellaNumberText" id="_38">38</p>
+                    <p class="tabellaNumberText" id="_39">39</p>
+                    <p class="tabellaNumberText" id="_40">40</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_46">46</p>
+                    <p class="tabellaNumberText" id="_47">47</p>
+                    <p class="tabellaNumberText" id="_48">48</p>
+                    <p class="tabellaNumberText" id="_49">49</p>
+                    <p class="tabellaNumberText" id="_50">50</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_56">56</p>
+                    <p class="tabellaNumberText" id="_57">57</p>
+                    <p class="tabellaNumberText" id="_58">58</p>
+                    <p class="tabellaNumberText" id="_59">59</p>
+                    <p class="tabellaNumberText" id="_60">60</p>
+                </div>
+            </div>
+            <div class="cartellaDiv">
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_61">61</p>
+                    <p class="tabellaNumberText" id="_62">62</p>
+                    <p class="tabellaNumberText" id="_63">63</p>
+                    <p class="tabellaNumberText" id="_64">64</p>
+                    <p class="tabellaNumberText" id="_65">65</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_71">71</p>
+                    <p class="tabellaNumberText" id="_72">72</p>
+                    <p class="tabellaNumberText" id="_73">73</p>
+                    <p class="tabellaNumberText" id="_74">74</p>
+                    <p class="tabellaNumberText" id="_75">75</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_81">81</p>
+                    <p class="tabellaNumberText" id="_82">82</p>
+                    <p class="tabellaNumberText" id="_83">83</p>
+                    <p class="tabellaNumberText" id="_84">84</p>
+                    <p class="tabellaNumberText" id="_85">85</p>
+                </div>
+            </div>
+            <div class="cartellaDiv">
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_66">66</p>
+                    <p class="tabellaNumberText" id="_67">67</p>
+                    <p class="tabellaNumberText" id="_68">68</p>
+                    <p class="tabellaNumberText" id="_69">69</p>
+                    <p class="tabellaNumberText" id="_70">70</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_76">76</p>
+                    <p class="tabellaNumberText" id="_77">77</p>
+                    <p class="tabellaNumberText" id="_78">78</p>
+                    <p class="tabellaNumberText" id="_79">79</p>
+                    <p class="tabellaNumberText" id="_80">80</p>
+                </div>
+                <div class="cartellaRigaDiv">
+                    <p class="tabellaNumberText" id="_86">86</p>
+                    <p class="tabellaNumberText" id="_87">87</p>
+                    <p class="tabellaNumberText" id="_88">88</p>
+                    <p class="tabellaNumberText" id="_89">89</p>
+                    <p class="tabellaNumberText" id="_90">90</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

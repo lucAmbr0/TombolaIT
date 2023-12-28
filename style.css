@@ -1,0 +1,419 @@
+/* -
+                    Orari Scuola
+Source @luca.ambroo_ 
+GitHub: https://github.com/lucAmbr0/
+IG: https://www.instagram.com/luca.ambroo_/ 
+*/
+/* -------------------- FONTS --------------------*/
+
+/* Normal text: font-family: 'Noto Sans', sans-serif; */
+/* Headings/Titles: font-family: 'Poppins', sans-serif; */
+/* All credits in Disclaimer.html */
+
+/* -------------------- GENERAL RULES --------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background: linear-gradient(#439bed, #3e35f4); */
+    /* background: linear-gradient(#eda343, #f44747); */
+    /* background: linear-gradient(#83e15a, #3f673f); */
+    background-color: #6ea258;
+    /* background: linear-gradient(#7b4cfb, #cd2dbf); */
+    z-index: 2;
+    height: 100vh;
+    overflow: scroll;
+    margin: 0;
+    transition: 0.4s all;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------- ANIMATIONS DEFINITIONS  --------------------*/
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(3vw) translateX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) translateX(0);
+    }
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateY(0px) translateX(-3vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateY(0px) translateX(3vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) translateX(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) translateX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) translateX(0);
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 0;
+        scale: 0.6;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes softZoomOut {
+    from {
+        opacity: 0;
+        scale: 0.8;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+}
+
+/* -------------------- RULES  --------------------*/
+
+::-webkit-scrollbar {
+    display: none;
+    /* width: 0px; */
+    /* height: 0px; */
+    scrollbar-width: none;
+}
+
+#mainDiv {
+    display: flex;
+    /* border-radius: 4vh; */
+    margin: auto 0;
+    height: 98vh;
+    /* background-color: lime; */
+}
+
+#tabellaDiv {
+    border-radius: 2vh;
+    margin: auto 1vh;
+    width: 53vw;
+    height: 94vh;
+    overflow: hidden;
+    padding: 1vh;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.7); */
+    border: solid 3px rgba(40,40,40,1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    animation: fadeRight 0.6s;
+}
+
+#tabelloneTitleDiv {
+    display: block;
+    height: fit-content;
+    margin:  0;
+    width: 100%;
+    font-family: Poppins;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(40, 40, 40, 1);
+    font-size: 3vh;
+}
+
+h1 {
+    margin: 1vh 0;
+}
+
+.cartellaDiv {
+    width: 48%;
+    height: 26vh;
+    margin: 0.5vh 0.5vh;
+    border-radius: 1vh;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.7); */
+    justify-content: space-around;
+    /* border: solid 3px rgb(40, 40, 40); */
+}
+
+.cartellaRigaDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    /* background-color: aqua; */
+}
+
+/* .tabellaNumberDiv {
+    width: 20%;
+    height: 100%;
+    margin: 5px;
+    background-color: blueviolet;
+    display: flex;
+} */
+
+.tabellaNumberText {
+    display: flex;
+    margin: auto auto;
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 6.2vh;
+    color: rgba(20, 20, 20, 1);
+    align-items: center;
+    margin: 3px;
+    justify-content: center;
+    background-color: rgb(212, 189, 71);
+    border: solid 2px transparent;
+    width: 7.5vh;
+    height: 7.5vh;
+    border-radius: 1vh;
+    cursor: pointer;
+    overflow: scroll;
+    transition: 0.3s all;
+}
+
+.tabellaNumberText:hover {
+    box-shadow: 0 0 8px rgba(40, 40, 40, 1);
+    background-color: rgb(251, 213, 22);
+    border: solid 2px orangered;
+}
+
+.hidden {
+    opacity: 0.3;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.current {
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 1);
+    background-color: rgb(255, 255, 0);
+    color: rgb(10,10,10);
+    border: solid 2px orangered;   
+    scale: 1.2;
+    z-index: 2;
+}
+
+.recentNumberText {
+    display: flex;
+    margin: auto auto;
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 6.2vh;
+    color: rgba(40, 40, 40, 1);
+    align-items: center;
+    margin: 3px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: solid 2px transparent;
+    text-align: center;
+    width: 7.5vh;
+    height: 7.5vh;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s all;
+    animation: fadeLeft 0.4s forwards;
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.recentNumberText:hover {
+    box-shadow: 0 0 8px rgba(40, 40, 40, 1);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 2px white;
+}
+
+#leftSideDiv {
+    border-radius: 0 2vh 2vh 0;
+    margin: auto 1vh;
+    margin-left: -3px;
+    width: 47vw;
+    height: 94vh;
+    padding: 1vh;
+    border: solid 3px rgba(40, 40, 40, 1);
+    box-shadow: 0 0 8px rgba(40, 40, 40, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeLeft 0.7s;
+}
+
+#bigNumberDiv {
+    border-radius: 1vh;
+    margin: 1.5vh 1.5vh 0.75vh 1.5vh;
+    width: 100%;
+    padding: 1vh 4vh;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgb(40, 40, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 1.5vh 0;
+    font-size: 4vh;
+    color: rgb(20, 20, 20);
+}
+
+#currentNumber {
+    line-height: 1;
+    margin: 0 0 10px 0;
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 24vh;
+    text-align: center;
+    color: rgb(10, 10, 10);
+}
+
+.stats {
+    display: flex;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 2.5vh;
+    margin: 0vh;
+    font-family: Noto Sans;
+    color: rgb(30, 30, 30);
+}
+
+#statsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1.5vh 0 0.75vh 1.5vh;
+    box-shadow: 0 0 8px rgb(40, 40, 40);
+    padding: 1.5vh;
+    border-radius: 1vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+p {
+    display: flex;
+}
+
+#recentNumbersDiv {
+    border-radius: 1vh;
+    margin: 1vh 1.5vh 0 1.5vh;
+    width: auto;
+    padding: 1vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgb(40, 40, 40);
+}
+
+#recentNumbersList {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: left;
+    overflow: scroll;
+    width: 44vw;
+    border-radius: 1vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: -3vh 0 3vh -3vh inset rgba(20, 20, 20, 0.8), 3vh 0 3vh -3vh inset rgba(20, 20, 20, 0.8);
+}
+
+#other {
+    height: 100%;
+    display: flex;
+    margin: 1.5vh 1.5vh -1vh 1.5vh;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.square {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    height: 23%;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgb(40, 40, 40);
+}
+
+.square#smaller {
+    height: 10%;
+}
+
+.bottomSections {
+    margin: auto;
+    font-family: Poppins;
+    font-size: 4vh;
+    font-weight: 500;
+    color: rgb(20,20,20);
+}
+
+.bottomSections#smaller {
+    font-family: Noto Sans;
+    font-size: 1.6vh;
+    font-weight: 400;
+}
