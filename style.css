@@ -160,7 +160,7 @@ p {
     padding: 1vh;
     /* background-color: rgba(0, 0, 0, 0.3); */
     /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.7); */
-    border: solid 3px rgba(40,40,40,1);
+    border: solid 3px rgba(40, 40, 40, 1);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -171,7 +171,7 @@ p {
 #tabelloneTitleDiv {
     display: block;
     height: fit-content;
-    margin:  0;
+    margin: 0;
     width: 100%;
     font-family: Poppins;
     text-align: center;
@@ -252,8 +252,8 @@ h1 {
 .current {
     box-shadow: 0 0px 40px rgba(0, 0, 0, 1);
     background-color: rgb(255, 255, 0);
-    color: rgb(10,10,10);
-    border: solid 2px orangered;   
+    color: rgb(10, 10, 10);
+    border: solid 2px orangered;
     scale: 1.2;
     z-index: 2;
 }
@@ -410,11 +410,44 @@ p {
     font-family: Poppins;
     font-size: 4vh;
     font-weight: 500;
-    color: rgb(20,20,20);
+    color: rgb(20, 20, 20);
 }
 
 .bottomSections#smaller {
     font-family: Noto Sans;
     font-size: 1.6vh;
     font-weight: 400;
+}
+
+.inputNumber {
+    line-height: 1;
+    margin: 0 auto 10px auto;
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 24vh;
+    text-align: center;
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 50%;
+    overflow: hidden;
+}
+
+.inputNumber::selection {
+    border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(10, 10, 10);
 }
