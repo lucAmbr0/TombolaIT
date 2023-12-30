@@ -225,7 +225,7 @@ h1 {
     align-items: center;
     margin: 3px;
     justify-content: center;
-    background-color: rgb(212, 189, 71);
+    background-color: rgb(236, 203, 41);
     border: solid 2px transparent;
     width: 7.5vh;
     height: 7.5vh;
@@ -242,6 +242,7 @@ h1 {
 
 .hidden {
     opacity: 0.3;
+    background-color: rgb(212, 189, 71);
 }
 
 .visible {
