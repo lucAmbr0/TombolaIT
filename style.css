@@ -123,6 +123,18 @@ p {
     }
 }
 
+@keyframes tombolaSoftZoomOut {
+    from {
+        opacity: 0;
+        scale: 0.8;
+    }
+
+    to {
+        opacity: 0.3;
+        scale: 1;
+    }
+}
+
 @keyframes disappear {
     from {
         opacity: 1;
@@ -196,6 +208,9 @@ h1 {
     /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.7); */
     justify-content: space-around;
     /* border: solid 3px rgb(40, 40, 40); */
+    opacity: 0;
+    animation: fadeUp 0.5s forwards;
+    animation-delay: 1s;
 }
 
 .cartellaRigaDiv {
@@ -204,6 +219,9 @@ h1 {
     justify-content: space-around;
     width: 100%;
     height: fit-content;
+    opacity: 0;
+    animation: softZoomOut 0.5s forwards;
+    animation-delay: 1.2s;
     /* background-color: aqua; */
 }
 
@@ -301,6 +319,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     animation: fadeLeft 0.7s;
+    overflow: hidden;
 }
 
 #bigNumberDiv {
@@ -314,6 +333,9 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    opacity: 0;
+    animation: softZoomOut 0.5s forwards;
+    animation-delay: 0.2s;
 }
 
 h2 {
@@ -369,6 +391,9 @@ p {
     padding: 1vh;
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 8px rgb(40, 40, 40);
+    opacity: 0;
+    animation: fadeUp 0.5s forwards;
+    animation-delay: 0.5s;
 }
 
 #recentNumbersList {
@@ -377,7 +402,8 @@ p {
     flex-wrap: nowrap;
     justify-content: left;
     overflow: scroll;
-    width: 44vw;
+    margin: 0 auto;
+    width: 100%;
     border-radius: 1vh;
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: -3vh 0 3vh -3vh inset rgba(20, 20, 20, 0.8), 3vh 0 3vh -3vh inset rgba(20, 20, 20, 0.8);
@@ -392,7 +418,7 @@ p {
     flex-wrap: wrap;
 }
 
-.square {
+.moreInfo {
     display: flex;
     width: 100%;
     margin: 0;
@@ -400,8 +426,28 @@ p {
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 8px rgb(40, 40, 40);
 }
+#first {
+    opacity: 0;
+    animation: fadeUp 0.5s forwards;
+    animation-delay: 0.6s;
+}
 
-.square#smaller {
+#second {
+    opacity: 0;
+    animation: fadeUp 0.5s forwards;
+    animation-delay: 0.7s;
+}
+
+#third {
+    opacity: 0;
+    animation: fadeUp 0.5s forwards;
+    animation-delay: 0.8s;
+}
+
+.moreInfo#smaller {
+    opacity: 0;
+    animation: fadeUp 0.5s forwards;
+    animation-delay: 0.9s;
     height: 10%;
 }
 
