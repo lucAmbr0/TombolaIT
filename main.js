@@ -18,6 +18,7 @@ hideAllNumbers();
 
 let numbersUsed = [];
 let i = 0;
+let prevNum;
 
 var recentNumbersList = document.getElementById('recentNumbersList');
 function toggleNumber(number) {
@@ -39,6 +40,8 @@ function toggleNumber(number) {
         var missing = 90 - i;
         document.getElementById('numberOfUsed').textContent = 'Numeri estratti: ' + i
         document.getElementById('numberOfMissing').textContent = 'Numeri mancanti: ' + missing
+        prevNum = document.getElementById('currentNumber').textContent;
+        document.getElementById('currentNumber').textContent = number;
     } else if (document.getElementById("_" + number).classList.contains("visible")) {
         var tabellaNum = document.getElementById("_" + number);
         tabellaNum.classList.remove('current');
@@ -52,6 +55,9 @@ function toggleNumber(number) {
         var missing = 90 - i;
         document.getElementById('numberOfUsed').textContent = 'Numeri estratti: ' + i
         document.getElementById('numberOfMissing').textContent = 'Numeri mancanti: ' + missing
+        if (number.toString() === document.getElementById('currentNumber').textContent) {
+            document.getElementById('currentNumber').textContent = "--";
+        }
         var removingElement = document.getElementById("rand_" + number);
         removingElement.remove();
     }

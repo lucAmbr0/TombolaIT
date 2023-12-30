@@ -236,7 +236,6 @@ h1 {
 }
 
 .tabellaNumberText:hover {
-    box-shadow: 0 0 8px rgba(40, 40, 40, 1);
     background-color: rgb(251, 213, 22);
     border: solid 2px orangered;
 }
