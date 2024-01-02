@@ -164,7 +164,7 @@ p {
 }
 
 #tabellaDiv {
-    border-radius: 2vh;
+    border-radius: 3vh;
     margin: auto 1vh;
     width: 53vw;
     height: 94vh;
@@ -172,7 +172,7 @@ p {
     padding: 1vh;
     /* background-color: rgba(0, 0, 0, 0.3); */
     /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.7); */
-    border: solid 3px rgba(40, 40, 40, 1);
+    border: solid 0.4vh rgba(40, 40, 40, 1);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -200,8 +200,8 @@ h1 {
     width: 48%;
     height: 26vh;
     margin: 0.5vh 0.5vh;
-    border-radius: 1vh;
-    padding: 3px;
+    border-radius: 1.5vh;
+    padding: 0.2vh;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.3);
@@ -241,10 +241,10 @@ h1 {
     font-size: 6.2vh;
     color: rgba(20, 20, 20, 1);
     align-items: center;
-    margin: 3px;
+    margin: 0.2vh;
     justify-content: center;
     background-color: rgb(236, 203, 41);
-    border: solid 2px transparent;
+    border: solid 0.4vh transparent;
     width: 7.5vh;
     height: 7.5vh;
     border-radius: 1vh;
@@ -255,7 +255,7 @@ h1 {
 
 .tabellaNumberText:hover {
     background-color: rgb(251, 213, 22);
-    border: solid 2px orangered;
+    border: solid 0.4vh orangered;
 }
 
 .hidden {
@@ -268,10 +268,10 @@ h1 {
 }
 
 .current {
-    box-shadow: 0 0px 40px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 3vh rgba(0, 0, 0, 1);
     background-color: rgb(255, 255, 0);
     color: rgb(10, 10, 10);
-    border: solid 2px orangered;
+    border: solid 0.4vh orangered;
     scale: 1.2;
     z-index: 2;
 }
@@ -284,14 +284,14 @@ h1 {
     font-size: 6.2vh;
     color: rgba(40, 40, 40, 1);
     align-items: center;
-    margin: 3px;
+    margin: 0.3vh;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.2);
-    border: solid 2px transparent;
+    border: solid 0.3vh transparent;
     text-align: center;
     width: 7.5vh;
     height: 7.5vh;
-    border-radius: 7px;
+    border-radius: 1vh;
     cursor: pointer;
     transition: 0.3s all;
     animation: fadeLeft 0.4s forwards;
@@ -303,18 +303,18 @@ h1 {
 .recentNumberText:hover {
     box-shadow: 0 0 8px rgba(40, 40, 40, 1);
     background-color: rgba(255, 255, 255, 0.5);
-    border: solid 2px white;
+    border: solid 0.3vh white;
 }
 
 #leftSideDiv {
-    border-radius: 0 2vh 2vh 0;
+    border-radius: 0 4vh 4vh 0;
     margin: auto 1vh;
     margin-left: -3px;
     width: 47vw;
     height: 94vh;
     padding: 1vh;
-    border: solid 3px rgba(40, 40, 40, 1);
-    box-shadow: 0 0 8px rgba(40, 40, 40, 1);
+    border: solid 0.4vh rgba(40, 40, 40, 1);
+    box-shadow: 0 0 0.8vh rgba(40, 40, 40, 1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -323,13 +323,13 @@ h1 {
 }
 
 #bigNumberDiv {
-    border-radius: 1vh;
+    border-radius: 0.75vh 2.5vh 0.75vh 0.75vh;
     margin: 1.5vh 1.5vh 0.75vh 1.5vh;
     width: 100%;
     padding: 1vh 4vh;
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 8px rgb(40, 40, 40);
+    box-shadow: 0 0 0.8vh rgb(40, 40, 40);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -385,12 +385,12 @@ p {
 }
 
 #recentNumbersDiv {
-    border-radius: 1vh;
+    border-radius: 0.75vh;
     margin: 1vh 1.5vh 0 1.5vh;
     width: auto;
     padding: 1vh;
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 8px rgb(40, 40, 40);
+    box-shadow: 0 0 0.8vh rgb(40, 40, 40);
     opacity: 0;
     animation: fadeUp 0.5s forwards;
     animation-delay: 0.5s;
@@ -423,9 +423,11 @@ p {
     width: 100%;
     margin: 0;
     height: 23%;
+    border-radius: 0.75vh;
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 8px rgb(40, 40, 40);
+    box-shadow: 0 0 0.8vh rgb(40, 40, 40);
 }
+
 #first {
     opacity: 0;
     animation: fadeUp 0.5s forwards;
@@ -449,6 +451,7 @@ p {
     animation: fadeUp 0.5s forwards;
     animation-delay: 0.9s;
     height: 10%;
+    border-radius: 0.75vh 0.75vh 2.5vh;
 }
 
 .bottomSections {
